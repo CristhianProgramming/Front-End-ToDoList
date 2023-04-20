@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: bisque;
+}
+footer{
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    
+}
+
+footer p {
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.nav-style{
+    text-align: center;
+}

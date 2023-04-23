@@ -1,0 +1,13 @@
+{
+    "/tareas/*": {
+        "target": "http://localhost:9070/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+
+    "/api/v1/auth/*": {
+        "target": "http://localhost:9070/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

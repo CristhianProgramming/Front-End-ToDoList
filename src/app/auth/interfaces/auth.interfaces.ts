@@ -17,3 +17,12 @@ export interface ResponseAuth{
     token:string
 }
 
+
+export interface Task{
+    id: number,
+    nameTask: string,
+    descriptionTask: string,
+    startDate: Date,
+    limitDate: Date,
+    complet: boolean
+}

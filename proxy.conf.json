@@ -1,5 +1,5 @@
 {
-    "/tareas/*": {
+    "/api/v1/task/*": {
         "target": "http://localhost:9070/",
         "secure": false,
         "logLevel": "debug"

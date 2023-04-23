@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Login, Register, ResponseAuth } from '../interfaces/auth.interfaces';
 
+
 @Injectable({
   providedIn: 'root',
 })
 
 
 export class AuthService {
-
 
   private Url = "api/v1/auth/"
 

@@ -8,8 +8,8 @@ export const routes: Routes = [
   
     {path:'',component:ListComponent},
     {path:':id',component:TaskComponent},
-    {path:'create',component:CreateTaskComponent},
-    {path:'edit/:id',component:CreateTaskComponent},
+    {path:'create',component:TaskComponent},
+    {path:'edit/:id',component:TaskComponent},
     {path:'**',redirectTo:''}
 ]
 

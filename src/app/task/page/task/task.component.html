@@ -1,1 +1,26 @@
-<p>task works!</p>
+<div class="container m-5">
+  <h2 class="text-center">CREAR TAREA</h2>
+  <div class="row">
+    <div class="col-8 mt-3">
+        <form class="form-group" [formGroup]="formulario" (ngSubmit)="crearTarea()">
+        <input type="text" placeholder="nombre tarea" class="form-control" formControlName="nameTask">
+        <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder="descipcion" formControlName="descriptionTask"></textarea>
+        <input type="date" placeholder="fecha inicio" class="form-control mt-2" formControlName="startDate">
+        <input type="date" placeholder="fecha fin" class="form-control mt-2" formControlName="limitDate">
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" value="false" id="flexCheckIndeterminate" formControlName="complet">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Completada
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary float-end" [disabled]="formulario.invalid">Enviar</button>
+    </form>
+   
+    </div>
+    <div class="col-4">
+        <img src="https://th.bing.com/th/id/R.b38ed3787523794289f32814a9813280?rik=S%2fbpb5i%2b%2fELymA&pid=ImgRaw&r=0" class="card-img">
+    </div>
+  </div>
+</div>
+
+<pre>{{formulario.value | json}}</pre>

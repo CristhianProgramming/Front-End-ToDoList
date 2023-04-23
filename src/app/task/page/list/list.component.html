@@ -1,1 +1,19 @@
-<p>list works!</p>
+<div class="container-fluid m-4">
+    <div class="row">
+        <div class="card m-2" style="width: 18rem;" *ngFor="let task of tasks">
+            <div class="card-body">
+              <h5 class="card-title">{{ task.nameTask |  titlecase}}</h5>
+              <p *ngIf="task.complet == true">completada<p> <p *ngIf="task.complet == false">por realizar<p></p>
+              <hr>
+              <p class="card-text">{{ task.descriptionTask }}</p>
+              <p class="card-text">Fecha Inicio: {{ task.startDate | date }}</p>
+              <p class="card-text">Fecha limite: {{ task.limitDate | date }}</p>
+              <hr>
+              <div class="row text-center">
+                <div class="col-6"><a class="btn btn-outline-info" [routerLink]="['edit',task.id]">Editar</a></div>
+                <div class="col-6"><a class="btn btn-outline-danger" (click)="eliminarTarea(task.id)" >Delete</a></div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

@@ -6,6 +6,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidemenuComponent } from '../shared/sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [LoginComponent, RegistreComponent],
@@ -14,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AuthRoutingModule,
     RouterModule,
     ReactiveFormsModule
-   
+  
   ],
   exports: [LoginComponent, RegistreComponent],
 })

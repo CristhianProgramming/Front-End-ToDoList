@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { SidemenuComponent } from './shared/sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,

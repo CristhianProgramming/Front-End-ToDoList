@@ -1,1 +1,67 @@
-<p>registre works!</p>
+<div class="row">
+    <div class="col text-center">
+      <div class="container">
+        <h1>Registro</h1>
+        <div class="row">
+          <form (ngSubmit)="sendFormulario()" [formGroup]="miformulario" autocomplete="off">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                formControlName="firstname"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Second Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Second Name"
+                formControlName="lastname"
+              />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="user Email"
+                  formControlName="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="user password"
+                  formControlName="password"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="confirm password"
+                  formControlName="password2"
+                />
+              </div>
+            <button class="btn btn-primary" [disabled]="miformulario.invalid">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
